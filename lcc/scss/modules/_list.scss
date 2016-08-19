@@ -1,0 +1,249 @@
+/*------------------------------------------------------------------
+[18. List]
+*/
+.list-view-wrapper{
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.list-view-container{
+    position: relative;
+    .list-quickscroll{
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top:0;
+            right: 10px;
+            z-index: 120;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            li a{
+                font-size: 0.7em;
+                vertical-align: baseline;
+            }
+        }
+
+    }
+}
+
+.list-view-group-container {
+	margin: 0;
+	min-height: 1px;
+	overflow: hidden;
+	padding: 26px 0 0 0;
+	position: relative;
+    &:last-child{
+        ul{
+            border: 0;
+        }
+    }
+}
+.list-view-group-header, .list-view-fake-header {
+	background: $color-master-lightest;
+	color: #232830;
+	font: normal 11px/14px 'Montserrat',Arial;
+    text-transform: uppercase;
+	margin: 0;
+	padding: 6px 0 5px 15px;
+	position: absolute;
+    border-top: 1px solid $panel-border-color;
+    border-bottom: 1px solid $panel-border-color;
+    z-index: 10;
+}
+.list-view-group-header {
+	bottom: auto;
+	min-height: 1px;
+	top: 0;
+	width: 100%;
+    border-top: 0;
+}
+.list-view-fake-header {
+	width: 100%;
+	z-index: 100;
+    font-size: 11px !important;
+    line-height: 14px !important;
+}
+
+.list-view-fake-header.list-view-hidden {
+	visibility: hidden;
+}
+.list-view-group-container.list-view-animated .list-view-group-header {
+	bottom: 0;
+	top: auto;
+}
+
+
+input.list-view-search{
+    font-size: 15px;
+    color: #232830;
+}
+
+.no-top-border{
+    .list-view-fake-header {
+        border-top: 0;
+    }
+}
+
+.list-view {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    }
+    li{
+        padding-left:15px;
+        white-space: nowrap;
+        cursor: pointer;
+        width: 100%;
+        display: table;
+        &:hover {
+            background-color: $color-complete-lighter;
+        }
+        &.active{
+            background-color: $color-warning-lighter;
+        }
+        p{
+            margin: 0;
+            line-height: 19px;
+        }
+        & > a{
+            margin-right: 15px;
+            display: table;
+            width: 100%;
+        }
+    }
+    &.boreded{
+        li{
+            & > a {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            }
+            &:last-child > a{
+                border-bottom: 0;
+            }
+        }
+    }
+    
+}
+
+
+.list-view.boreded li + li {
+	border-top: 0;
+}
+
+[data-ios="true"] .list-view-group-header,
+[data-ios="true"] .list-view-fake-header {
+	width: 288px; /*scrollbars aren't visible in iOS devices, so make the headers wider */
+}
+
+//Bootstrap-List
+.list-group-item{
+    border: 1px solid $color-master-lighter;
+    &.active, &.active:hover, &.active:focus{
+        background-color:$color-success-light;
+        border-color:$color-success-light;
+    }
+}
+
+.list-group-item:first-child{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.list-group-item:last-child{
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.landing-list-item {
+	display:block;
+	margin-top:20px;
+}
+
+
+//Landing-page-lists
+.landing-list-item i {
+	display:block;
+	float:left;
+	text-align:center;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	width:60px;
+	height:60px;
+	line-height:60px;
+ *padding:0 0 0 10px;
+	margin:0px auto;
+	color:#806aaf;
+	background-color:#f9f9f9;
+	text-shadow: 1px 0 0 rgba(0, 0, 0, .2);
+}
+.landing-list-item h3 {
+	margin-left:0px;
+	line-height:1;
+ *line-height:1.2em;
+	padding-top:0px;
+}
+.landing-list-item h3 a {
+	color: #373b43;
+	font-weight:500;
+	text-decoration:underline ;
+}
+.landing-list-item h3 a:hover {
+	text-decoration: none;
+}
+.section-highlights {
+	padding: 0 0 0 0;
+}
+.section-highlights ul {
+	margin:0px 0px 0px -40px;
+}
+.section-highlights ul li {
+	display: inline;
+	list-style:none;
+	padding: 2px 0 0 0;
+ *padding: 0 4px 0 0;
+}
+.section-highlights ul li a {
+	font-weight:400;
+ *float:left;
+	zoom: 1;
+	margin: 0 0 -4px 0;
+}
+.section-highlights ul li a:hover {
+	text-decoration:underline;
+	display: inline;
+}
+.section-highlights ul li.all {
+	display: inline-block;
+}
+.section-highlights ul li.all a {
+	color:#e1714b;
+	display: inline-block;
+}
+ul.more-links {
+	margin:0 0 20px 0;
+ *padding: 0 0 5px 0;
+}
+ul.more-links li {
+	display: inline;
+ *float:left;
+ *white-space: nowrap;
+	list-style:none;
+	padding: 0 5px 0 0;
+ *padding: 0 4px 0 0;
+}
+ul.more-links li a {
+	list-style:none;
+	display: inline;
+	margin: 0 0 -4px 0;
+	font-weight:500;
+}
+ul.more-links li a:hover {
+	text-decoration:underline;
+}
