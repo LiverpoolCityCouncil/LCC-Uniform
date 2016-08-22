@@ -1,32 +1,80 @@
-/*------------------------------------------------------------------
-[29. Print]
-*/
+@media print {
 
-@media print{
-	.header, 
-	.page-sidebar, 
-	.quickview-wrapper, 
-	.overlay {
-		display: none;
+/* force single column: */
+/* reset grid: */
+	body,
+	.row, /* :get rid of that pesky -15px left/right margin 'cos it throws the content outa whack */
+	.container, /* :likewise the +15px! */
+	div[class^="col-"], /* :all the BS col-xx-xx classes -- this will only work if the col-xx-xx class is the first class */
+	section.m-t-10.p-b-70.p-t-10>.container, /* :content wrapper */
+	#page-title>.container /* :main heading */
+	{
+    	float: none !important; /* page breaks don't work inside floats, apparently */
+		width:100% !important;
+		padding:0 !important;
+		margin:0 !important;
+		display: block !important;
 	}
-	.page-container{
-		padding-left: 0;
+
+	body
+	{
+	padding:0 10% !important; /* lickle bit of page 'margin' */
 	}
-	.page-content-wrapper {
-		.content{
-		border-top:0;
-			.panel {
-				border: none;
-				.panel-body{
-				padding: 0;
-				}
-			}
-		}
+
+	
+/* prevent page breaks where we don't want them */	
+	table,
+	img,
+	section.container-fluid.no-padding.relative /* :one stop shop maps */
+	{
+		page-break-inside: avoid !important;
 	}
-	[class^='padding-'],
-	[class*='padding-'], 
-	.table tbody tr td{
-		padding: 10px;
+	
+	img 
+	{
+    	max-width: none !important;  /* :maps won't print without this! */
 	}
+
+	
+/* fixes: */	
+/* one stop shop & lifestyles pages: */
+/* remove extra whitespace around title: */
+	.p-b-45.p-t-35.bg-master-lightest,
+	.bg-primary-light.p-t-60.p-b-60.opening-hours,
+	.p-b-25.p-t-35
+	{
+		padding-top:10px !important;
+		padding-bottom:10px !important;
+	}
+	.m-t-20.text-white,.m-t-20.text-white h2 
+	{
+		margin-top:0 !important;
+	}
+	.md-p-l-20.md-p-r-20.xs-no-padding 
+	{
+		padding:0 !important;
+	}
+	
+
+	
+/* bits that shouldn't print: */
+	.well.m-t-20, /* :Get Email alerts */
+	.menu-title, /* :section logo */
+	#page-menu, /* :section nav */
+	.btn.btn-primary.btn-large, /* :apply button */
+	.btn.btn-primary, /* :apply button */
+	ol.breadcrumb.hidden-xs.hidden-sm, /* :breadcrumbs */
+	ul.pagination,
+	.form-group.form-group-default.input-group.col-md-10.col-sm-10.b-a.b-transparent-black, /* :search schools input form -- can't hide the radio boxes :( -- add .hidden-print to form instead? */
+	.p-t-20.p-b-20.m-t-15.btn.btn-primary.btn-lg.btn-block, /* 'contact us' button */
+	.side__menu, /* :related pages */
+	#venue_banner, /* :landing page splash/search block */
+	.col-md-4.text-center.bg-success.hover-push.story-block, /* :landing page news */
+	.col-sm-7.col-md-8.no-padding.xs-p-l-15.xs-p-r-15 /* :empty block */
+	{
+		display:none !important;
+	}
+	
+	
 
 }

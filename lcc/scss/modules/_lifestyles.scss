@@ -1,0 +1,411 @@
+/* Lifestyles section styles including timetable styling etc */
+
+ol.grid {
+	margin:20px 0px 20px 0px;
+	height:180px	
+}
+ol.grid li {
+	float:left;
+	list-style:none;
+	margin:0 2px 2px 0;
+	padding-left:0;
+	background-color:#eeeeee;
+}
+ol.grid li p{
+	padding-left:14px;
+}
+ol.grid li h3 {
+	font-size:1.23em;
+	line-height:1.02;
+	font-weight:bold;
+	padding:12px 14px 0 14px;
+	margin-bottom:0px;
+}
+ol.grid li.title {
+	width:23%;
+	height:10em;
+	margin:0 1px 1px 0;
+	position:relative;
+	display: table;
+}
+ol.grid li.title:hover {
+	background-color:#ddd;
+}
+ol.grid li.row-last, ol.grid li.row-last h3 {
+	margin-right:0;
+}
+ol.grid li.row-last h3 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+ol.grid li.allSwims {
+	background-color:#d1e8f2;
+}
+ol.grid li.allSwims:hover {
+	background-color:#c1dfec;
+	color:#fff;
+}
+ol.grid li.allClasses {
+	background-color:#55c555;
+}
+ol.grid li.allClasses:hover {
+	background-color:#439943;
+	color:#fff;
+}
+ol.grid li.allClasses a{color:#fff!important}
+ol.grid li a:hover, ol.grid h3 a:hover {
+	text-decoration:underline;
+}
+ol.grid li .classLocation {
+	font-weight:normal;
+	background:none;
+	margin:0;
+	padding:.9em 12px 0 12px;
+	color:#999999;
+	line-height:1.02;
+}
+ol.grid li .classTime {
+	font-size:1.23em;
+	line-height:1.02;
+	padding:.7em 12px 0 12px;
+	color:#000!important;
+}
+ @media (max-width: 767px) {
+/*todays swimming and classes*/
+ol.grid li {
+ float:left;
+ display:block;
+ list-style:none;
+ margin:0 2px 2px 0;
+ padding:0 0;
+ background-color:#eeeeee;
+}
+ ol.grid li h3 {
+ font-size:1em;
+ line-height:auto;
+ font-weight:bold;
+ padding:0 14px 0 14px;
+ margin:7px 0px;
+}
+ol.grid li.title {
+ width:100%;
+ height:auto;
+ margin:0 1px 1px 0;
+ padding:0;
+ position:relative;
+ display: table;
+}
+ol.grid li.title:hover {
+ background-color:#ddd;
+}
+ol.grid li.row-last, ol.grid li.row-last h3 {
+ margin-right:0;
+}
+ol.grid li.row-last h3 {
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
+ padding:20px 0;
+}
+ ol.grid li .classLocation {
+ font-weight:normal;
+ background:none;
+ margin:0;
+ padding:.5em 14px 0 14px;
+ color:#999999;
+ line-height:1.02;
+}
+ol.grid li .classTime {
+ font-size:1em;
+ line-height:auto;
+ padding:.6em 14px 0 14px;
+ color:#000!important;
+}
+}
+
+.lsTodayslisting {margin:20px 0px 20px 0px;}
+
+
+
+
+.toggle-ani {display:none;}
+
+
+.lst ul {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.lst ul li {
+    list-style-type: none;
+}
+
+.lst nav ul li a {
+    border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    -webkit-border-radius: 0 0 0 0;
+}
+
+.lst .nav-tabs {
+    border: none;
+    clear: both;
+}
+
+.lst .nav-tabs > li > a,
+.lst .nav-pills > li > a {
+    margin-right: 0;
+}
+
+.lst .fa-2x {
+    font-size: 1.2em;
+}
+
+
+
+.lst .current_page_item a {
+    color: red;
+}
+
+.lst .nav > li > a {
+    color: #848484;
+}
+
+.lst .nav > li > a:hover,
+.nav > li > a:focus {
+    color: black;
+    background-color: none;
+}
+
+.lst nav {
+    margin: 0 0 12px 0;
+    position: relative;
+}
+
+.nav ul {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.lst .nav-tabs > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px #949494;
+    border-bottom: solid 1px #949494;
+    border-left: none;
+    border-right: none;
+}
+
+.lst .nav-tabs > li.active > a, .lst .nav-tabs > li.active > a:hover, .lst .nav-tabs > li.active > a:focus{background-color:$color-info;color:#fff; }
+
+.lst .toggle {
+    width: auto;
+    height: auto;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px 15px 10px 15px;
+    border: solid 1px #949494;
+    float: left;
+    font-variant: small-caps;
+    display: none;
+}
+
+.lst .activity-con {
+    height: auto;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+    padding: 0;
+    background-color: $color-info-lighter;
+
+    
+}
+
+.lst .times {
+    font-size: 1.2em;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    letter-spacing: 2px;
+}
+
+.lst .times > .start {
+    width: auto;
+    height: auto;
+    padding: 8px 10px 8px 10px;
+    margin: 5px 5px 0 5px;
+    background-color: $color-info;
+    float: left;
+    font-weight: bold;
+}
+
+.lst .times > .end {
+    width: auto;
+    height: auto;
+    padding: 8px 10px 8px 10px;
+    margin: 5px 0 5px 5px;
+    background-color: $color-info;
+    float: left;
+    clear: both;
+}
+
+.lst .t-divider {
+    height: 1px;
+    width: 1px;
+    float: left;
+}
+
+.lst .i-bar {
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    background-color: #D6DEE2;
+    position: relative;
+}
+
+.lst .a-icon {
+    padding: 7px;
+    margin: 5px 0 5px 6px;
+    background-color: #ccc;
+    color: white;
+    float: left;
+    cursor: default;
+}
+
+.lst .btn-icon {
+    margin: 0;
+    padding: 3px;
+    background-color: #5B7C94;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.lst .btn-icon:hover {
+    background-color: #6493B5;
+}
+
+.lst .i-enable {
+    background-color: #EC4D4D;
+    cursor: pointer;
+}
+
+.lst .title {
+    height: auto;
+    margin: 0;
+    font-size: 1.4em;
+    padding: 15px 0 0 0;
+}
+
+.lst .a-note {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 2px;
+    line-height: 1.1;
+}
+
+.lst .disable,
+.lst .disable:hover {
+    cursor: default;
+    color: white;
+    background-color: #ccc;
+    margin: 0;
+    padding: 9px 10px 9px 10px;
+    float: right;
+    cursor: default;
+}
+
+.lst .info {
+    padding: 1% 2% 1% 2%;
+    float: left;
+    color: white;
+    font-size: 1em;
+    display: none;
+    border-top: solid 2px #AFBECD;
+    border-bottom: solid 2px #AFBECD;
+    background-color: #194a85;
+    width:100%;
+}
+
+.state-change {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-image: url("/assets/images/cancelled-banner-ribbon.png");
+    background-repeat: no-repeat;
+    background-position-x: right;    
+}
+
+.span12.activity-con.cancelled-ribbon {
+    background-image: url("/assets/images/cancelled-banner-ribbon.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:979px) {
+    .lst .nav-tabs > .active > a,
+    .nav-tabs > .active > a:hover,
+    .nav-tabs > .active > .menu-highlight {
+        //font-size: 1.1em;
+    }
+    .lst .nav-tabs > li > a {
+        //font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .lst nav ul li {
+        width: calc(85.3% / 6.1);
+    }
+    .lst .title {
+    }
+}
+
+@media screen and (max-width:530px) {
+    .lst .nav-tabs > .active > a,
+    .nav-tabs > .active > a:hover,
+    .nav-tabs > .active > .menu-highlight {
+        //font-size: 0.7em;
+        padding: 22px 0 20px 0;
+    }
+    .lst .nav-tabs > li > a {
+        //font-size: 0.7em;
+        padding: 22px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .lst .a-note {
+        width: 96%;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+    .lst .title {
+        width: 93%;
+        //font-size: 1.5em;
+        text-align: center;
+    }
+    .lst .times {
+        margin-right: 0;
+    }
+    .lst .info {
+        width: 92%;
+        padding: 2% 4% 2% 4%;
+        //font-size: 1em;
+        //line-height: 1.3;
+    }
+}
+
+.print-info {
+    display: none;
+}
+
+@media print {
+    .print-info {
+        display: block !important;
+    }
+}

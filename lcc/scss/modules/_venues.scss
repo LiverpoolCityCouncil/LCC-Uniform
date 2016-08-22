@@ -1,0 +1,98 @@
+/* Venue Page specific elements */
+
+.LCCcards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.LCCcards_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  padding: 0 1em 2em;
+}
+.no-flexbox .LCCcards_item {
+  float: left;
+}
+@media screen and (min-width: 42em) and (max-width: 60em) {
+  .LCCcards_item {
+    width: 50%;
+  }
+  .no-flexbox .LCCcards_item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media screen and (min-width: 60em) {
+  .LCCcards_item {
+    width: 33.3333%;
+  }
+  .no-flexbox .LCCcards_item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.LCCcard {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border: 0 solid #eee;
+  border-radius: 0;
+  width:100%;
+}
+
+.LCCcard_image img {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.LCCcard_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0;
+  padding: 1.5em;
+}
+.LCCcard_content p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+#venue_banner {
+   height:450px;
+}
+
+.opening-hours h2{color:#fff;}
+
+.opening-hours a {text-decoration: underline; color: #fff;font-weight:600;transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;}
+.opening-hours a:focus, a:hover, a:active{font-weight:500;text-decoration:none;}
+
