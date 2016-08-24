@@ -6,10 +6,7 @@
 
 //Main Layout
 @import "modules/layout";
-
-//View
-@import "modules/view";
-
+     
 //Panels
 @import "modules/panels";
 
@@ -45,6 +42,12 @@
 
 //Lifestyles
 @import "modules/lifestyles";
+
+//Blogs / news
+@import "modules/blog";
+
+//Events
+@import "modules/events";
 
 //Misc
 @import "modules/misc";
