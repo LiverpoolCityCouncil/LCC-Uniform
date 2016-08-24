@@ -1,0 +1,387 @@
+/*-----------------------------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Blog / news
+-----------------------------------------------------------------*/
+
+#posts {
+	position: relative;
+	.entry-content {
+		margin-top: 30px;
+	}
+}
+
+.entry {
+	position: relative;
+	margin: 0 0 50px;
+	padding: 0 0 50px;
+	border-bottom: 2px solid #F5F5F5;
+	blockquote {
+		p {
+			font-weight: 400;
+			font-style: italic;
+		}
+	}
+}
+
+.entry-image {
+	margin-bottom: 30px;
+	iframe {
+		display: block;
+	}
+	img {
+		border-radius:3px;
+	}
+}
+
+.entry-image,
+.entry-image > a,
+.entry-image .slide a,
+.entry-image img {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.entry-title {
+	h2 {
+		margin: 0;
+		font-size: 24px;
+		font-weight: 600;
+		a {
+			color: #333;
+			&:hover {
+				color: $color-master;
+			}
+		}
+	}
+}
+
+.entry-meta {
+	margin: 10px -10px -15px -40px;
+	list-style: none;
+	li {
+		float: left;
+		font-size: 13px;
+		line-height: 14px;
+		margin: 0 10px 15px 0;
+		color: #999;
+		font-style: italic;
+		&:before {
+			content: '/';
+			display: inline-block;
+			margin-right: 10px;
+			opacity: 0.5;
+		}
+		i {
+			position: relative;
+			top: 1px;
+			font-size: 14px;
+			margin-right: 3px;
+		}
+		a {
+			color: #999;
+			&:hover {
+				color: $color-master;
+			}
+		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+		ins {
+			font-weight: 600;
+			text-decoration: none;
+		}
+	}
+}
+
+.single-post {
+	.entry-meta {
+		margin-bottom: 20px;
+	}
+	.entry-content {
+		.entry-image {
+			max-width: 350px;
+		}
+	}
+}
+
+.entry-c {
+	position: relative;
+	overflow: hidden;
+}
+
+.entry-content {
+	position: relative;
+}
+
+.entry-link {
+	display: block;
+	background-color: #F5F5F5;
+	padding: 30px 0;
+	text-align: center;
+	color: #444;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius:3px;
+	&:hover {
+		color: #FFF;
+		background-color: $color-master;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+		span {
+			color: #EEE;
+		}
+	}
+	span {
+		display: block;
+		margin-top: 5px;
+		font-style: italic;
+		font-weight: normal;
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 14px;
+		color: #AAA;
+	}
+}
+body {
+	&:not(.device-touch) {
+		.entry-link {
+			-webkit-transition: background-color .3s ease-in-out;
+			-o-transition: background-color .3s ease-in-out;
+			transition: background-color .3s ease-in-out;
+		}
+	}
+}
+
+/* Small Thumbs
+-----------------------------------------------------------------*/
+
+.small-thumbs,
+.ievent {
+	 .entry-image {
+		float: left;
+		width: 300px;
+		margin: 0 30px 0 0;
+	}
+}
+
+.small-thumbs,
+.ievent {
+	 .entry-c {
+		 .entry-image {
+			float: none;
+			width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+	.entry-title {
+		 h2 {
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+}
+
+
+/* Small Thumbs - Right
+-----------------------------------------------------------------*/
+
+.small-thumbs {
+	&.alt {
+		.entry-image {
+			float: right;
+			margin: 0 0 0 30px;
+		}
+		.entry-c {
+			.entry-image {
+				float: none;
+				margin: 0 0 20px 0;
+			}
+		}
+	}
+}
+
+
+/* Blog - Masonry
+-----------------------------------------------------------------*/
+
+.post-masonry {
+	.entry-image,
+	.entry-image img {
+		height: auto !important;
+	}
+}
+
+
+/* Individual Post
+-----------------------------------------------------------------*/
+
+.ipost {
+	.entry-image {
+		img {
+			border-radius:0px;
+
+		}
+	}
+
+	.entry-title {
+		h3,
+		h4 {
+			margin: 0;
+			font-size: 16px;
+			font-weight: 600;
+			a {
+				color: #333;
+				&:hover {
+					color: $color-master;
+				}
+			}
+		}
+		h4 {
+			font-size: 15px;
+		}
+	}
+}
+
+.ipost {
+	.entry-meta {
+		margin-right: -10px;
+		li {
+			font-size: 13px;
+			margin-right: 10px;
+		}
+	}
+	.entry-content {
+		margin-top: 20px;
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+.more-link {
+	display: inline-block;
+	border-bottom: 1px solid $color-master;
+	padding: 0 2px;
+	font-style: italic;
+	&:hover {
+		border-bottom-color: #555;
+	}
+}
+
+
+/* Post Elements
+-----------------------------------------------------------------*/
+
+img,
+div {
+	&.alignleft {
+		float: left;
+		margin: 5px 20px 13px 0;
+		max-width: 100%;
+	}
+}
+
+div {
+	&.alignleft,
+	&.alignnone,
+	&.aligncenter,
+	&.alignright {
+		> img {
+			display: block;
+			float: none;
+		}
+	}
+}
+
+img.alignnone,
+img.aligncenter,
+div.alignnone,
+div.aligncenter {
+	display: block;
+	margin: 10px 0;
+	float: none;
+}
+
+img.aligncenter,
+div.aligncenter,
+div.aligncenter img {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+img,
+div {
+	&.alignright {
+		float: right;
+		margin: 5px 0 13px 20px;
+	}
+}
+
+.wp-caption {
+	text-align: center;
+	margin: 10px 20px 13px 20px;
+	font-style: italic;
+	img,
+	img a {
+		display: block;
+		margin: 0;
+	}
+}
+
+p {
+	&.wp-caption-text {
+		display: inline-block;
+		margin: 10px 0 0 0;
+		padding: 5px 10px;
+		background-color: #EEE;
+		border-radius:50px;
+	}
+}
+
+.wp-smiley {
+	max-height: 13px;
+	margin: 0 !important;
+}
+
+/* Tag Cloud
+-----------------------------------------------------------------*/
+
+.tagcloud {
+	margin-bottom: -2px;
+	a {
+		display: block;
+		float: left;
+		margin-right: 4px;
+		margin-bottom: 4px;
+		padding: 3px 6px;
+		border: 1px solid #E5E5E5;
+		font-size: 13px !important;
+		color: #666;
+		border-radius:2px;
+		&:hover {
+			border-color: $color-master !important;
+			color: $color-master !important;
+		}
+	}
+}
+
+body {
+	&:not(.device-touch) {
+		.tagcloud {
+			a {
+				-webkit-transition: all .3s ease-in-out;
+				-o-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
+			}
+		}
+	}
+}
