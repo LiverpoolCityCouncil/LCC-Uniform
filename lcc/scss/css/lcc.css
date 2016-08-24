@@ -1,8 +1,10 @@
 /*------------------------------------------------------------------
+
 LCC v2.0
-Theme : Liverpool City Council public
+LCC-Uniform : Liverpool City Council 
 Generated From SASS
 [Table of contents will go here]
+
 
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -1213,7 +1215,7 @@ caption {
   background-color: #2b303b; }
 
 .bg-menu-light {
-  background-color: #788296; }
+  background-color: blend-hardlight(#3c414b, #fff); }
 
 /* Gradients
 ------------------------------------
