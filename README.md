@@ -23,11 +23,11 @@ LCC-Uniform
   * plugins
   * js
   * img
-index.html
+* index.html
 
 ### Folder : assets
 
-This folder is entirely dedicated to individual project images, custom css and js files etc, its grouped into resource folders for best practice.
+This folder is entirely dedicated to individual project images, custom css and javascript files etc.
 
 
 ### Folder : lcc
