@@ -10,10 +10,10 @@ The UI components are built on a solid HTML foundation, progressively enhanced t
 
 ## What's inside
 Whats Inside LCC-Uniform
-This folder is a quickstart template to help you start your project.
+This folder is a quick start template to help you start your project.
 
 LCC-Uniform
- * lcc
+* lcc
   * css
   * js
   * img
