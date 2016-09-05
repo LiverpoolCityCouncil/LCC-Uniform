@@ -150,17 +150,17 @@ Alternate buttons
 }
 .btn-default {
   &.active, &:active, &.active:focus, &:active:focus, &:active:hover{
-    background-color: $color-master-darker;
+    background-color: $color-master-light;
     border-color: $color-master-light;
     color:$color-master-dark;
   }
   &.hover, &:hover{
-    background-color: $color-master-darkest;
+    background-color: $color-master-lighter;
     border-color: fade-out($color-master,.73);
     color: $color-master-darker;
   }
   &.active:hover{
-    background: mix($color-master, #000, 94%) ;
+    background: mix($color-master, #000, 14%) ;
   }
 }
 
