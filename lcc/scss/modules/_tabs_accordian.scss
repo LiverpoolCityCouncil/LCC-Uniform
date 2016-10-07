@@ -27,12 +27,10 @@
       border-radius: 0;
       padding: 15px 20px;
       margin-right: 0;
-      font-family: 'Montserrat';
       font-weight: 400;
       color: fade-out($color-master,.3);
       font-size: 12px;
       min-width: 70px;
-      text-transform: uppercase;
       border-color: transparent;
       &:hover,
       &:focus {
@@ -223,7 +221,7 @@
           top: 100%;
         }
         &:after {
-          border-top-color: $body-background;
+          border-top-color: #dfdfdf;
           border-width: 10px;
           margin-left: -10px;
         }

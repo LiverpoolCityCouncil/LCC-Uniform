@@ -30,7 +30,7 @@ $color-complete: #06995c !default;
 $color-primary: #383838 !default;
 $color-warning: #eea032 !default;
 $color-danger: #d9534f !default;
-$color-info: #00aced !default;
+$color-info: #0096cf !default;
 
 
 
@@ -92,10 +92,10 @@ $form-control-border-color: rgba($color-black, .07) !default;
 $dashboard-background : #f5f5f5 !default;
 
 //Mixing Color varriable for creating both light and dark colors
-$mix-percentage-dark: 81% !default;
-$mix-percentage-darker: 60% !default;
-$mix-percentage-light: 80% !default;
-$mix-percentage-lighter: 20% !default;
+$mix-percentage-dark: 76% !default;
+$mix-percentage-darker: 54% !default;
+$mix-percentage-light: 82% !default;
+$mix-percentage-lighter: 18% !default;
 
 //Lighter colors
 $color-success-light: mix($color-success, $color-white, $mix-percentage-light) !default;

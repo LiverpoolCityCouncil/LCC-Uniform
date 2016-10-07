@@ -105,7 +105,7 @@ form legend {
     height: 35px;
     padding: 9px 12px;
     line-height: normal;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     vertical-align: middle;
     min-height: 35px;
@@ -136,7 +136,7 @@ form legend {
 
 .input-sm, 
 .form-horizontal .form-group-sm .form-control  {
-    font-size: 13px;
+    font-size: 16px;
     min-height: 32px;
     height: 32px;
     padding: 8px 9px;
@@ -437,7 +437,6 @@ input[type=checkbox]:checked + label{
         }
         .control-label{
             text-align: left;
-            opacity: .42;
             @include transition(opacity ease .3s);
         }
     }
@@ -521,9 +520,7 @@ input[type=checkbox]:checked + label{
 .form-group {
     margin-bottom: 10px;
     label:not(.error){
-        font-family:'Montserrat';
-        font-size: 11px;
-        text-transform: uppercase;
+        font-size: 14px;
         font-weight: 600;
     }
     label .help{

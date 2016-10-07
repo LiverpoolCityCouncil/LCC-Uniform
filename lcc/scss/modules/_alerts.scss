@@ -11,7 +11,7 @@
     text-shadow: none;
     padding: 9px 19px 9px 15px;
     border-radius: 3px;
-    font-size: 13px;
+    font-size: $body-font-size;
     border-width:0;
     @include transition(all 0.2s linear 0s);
     &.bordered{
@@ -71,9 +71,9 @@
     border-color: $color-warning-darker;
 }
 .alert-info{
-    background-color: $color-complete-lighter;
-    color: $color-complete-darker;
-    border-color: $color-complete-darker;
+    background-color: $color-info-lighter;
+    color: $color-info-darker;
+    border-color: $color-info-darker;
     .close {
         background-position: -67px -10px !important;
     }
@@ -88,8 +88,8 @@
 }
 .alert-default{
     background-color: #fff;
-    color: $color-master;
-    border-color: $color-master-light;
+    color: $color-master-light;
+    border-color: $color-master-lighter;
      .close {
         background-position: -67px -10px !important;
     }

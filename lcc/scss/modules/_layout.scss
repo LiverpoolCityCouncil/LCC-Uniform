@@ -43,11 +43,11 @@ body {
             font-family: 'Montserrat';
             font-size: 11px !important;
             font-weight: 400;
-            color: #66686d;
+            color: #5c5e63;
             text-decoration:none;
             &.active {
                 font-weight: 600;
-                color:#006ea5;
+                color:#006395;
             }
         }
         li {
@@ -67,7 +67,7 @@ body {
 .breadcrumb a, 
 .breadcrumb i, 
 .breadcrumb span,.breadcrumb li {
-        color: #66686d;
+        color: #5c5e63;
         font-weight: 300;
         text-shadow: none;
 }
@@ -232,7 +232,7 @@ body {
 
 #top-search {
 	float: right;
-	margin: 40px 0 40px 15px;
+	margin: 45px 0 40px 15px;
 }
 
 
@@ -275,7 +275,7 @@ body.top-search-open #top-search a i.icon-line-cross {
 	opacity: 0;
 	z-index: -2;
 	position: absolute;
-	width: 100% !important;
+		width: 100% !important;
 	height: 100% !important;
 	padding: 0 15px;
 	margin: 0;
