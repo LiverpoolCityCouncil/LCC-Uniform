@@ -1019,6 +1019,7 @@
         display: block;
         float: none;
         height: auto !important;
+        margin-right:0px;
     }
 
     #primary-menu-trigger {
@@ -1112,7 +1113,9 @@
         -o-transition: margin .4s ease;
         transition: margin .4s ease;
     }
-
+    
+	.main-search{margin-bottom:10px}
+	
     #primary-menu > div > #top-search a {
         margin: 20px 0 !important;
     }

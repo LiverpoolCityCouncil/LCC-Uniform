@@ -1,0 +1,26 @@
+{
+  "name": "LCC-Uniform",
+  "version": "1.0.0",
+  "description": "LCC Uniform is a set Web Design Standards to set a level of simplicity and consistency across all Liverpool City Council digital services",
+  "author": "Niall Walsh <niall.walsh@liverpool.gov.uk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chatmandu/LCC-Uniform"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "grunt, sass"
+  ],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-jshint": "0.11.3",
+    "grunt-contrib-sass": "0.9.2",
+    "grunt-contrib-uglify": "0.11.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

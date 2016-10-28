@@ -118,7 +118,11 @@
 }
 // Fix for chrome's button outline on focus
 button:focus{
-    outline: none !important;
+    outline: 3px solid $color-accessibility!important;
+}
+
+.btn:focus{
+    outline: 3px solid $color-accessibility!important;	
 }
 /*
 Alternate buttons

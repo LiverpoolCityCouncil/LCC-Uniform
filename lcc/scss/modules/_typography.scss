@@ -100,7 +100,7 @@ a {
     color: $color-info-dark;
     transition: color 0.1s linear 0s,background-color 0.1s linear 0s,opacity 0.2s linear 0s !important;
 }
-a:focus, a:hover, a:active {
+a:hover, a:active {
     color: $color-info-darker;
 }
 a,a:focus, a:hover, a:active {
@@ -109,6 +109,11 @@ a,a:focus, a:hover, a:active {
 }
 a[ng-click] {
     cursor: pointer;
+}
+
+a:focus {
+    background-color: $color-accessibility;
+    outline: 3px solid $color-accessibility;
 }
 br {
    line-height: normal;

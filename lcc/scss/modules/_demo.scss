@@ -511,11 +511,15 @@ ul.external-links li.external a:hover {
   -moz-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
- ul#streets li:focus,  ul#streets li:hover, ul#streets li.active {
+ ul#streets li:hover, ul#streets li.active {
   border: 1px solid $color-primary;
   background: #fafafa;
 }
 
+ ul#streets li:focus {
+    background-color: $color-accessibility;
+    outline: 3px solid $color-accessibility;
+}
 
 
 
@@ -710,12 +714,12 @@ dl.inline dt {
     font-size: 134px;
     left: 0;	
 }
+.item-box.style3 h2 {display:inline;}
 .item-box.style3 a {
     margin-left: 0px;
 }	
 
 .item-box.style3 a:not(.btn){
-    color: #007fb0;
     display: inline;
     transition: opacity 0.2s linear 0s;
 }	
@@ -789,6 +793,10 @@ ul.landingTags li{
 	color:#fff;
 	background:$color-master;
 	box-shadow: 0 1px 0 $color-master-darkest;
+
+}
+.landingTags li a:focus{
+    outline: 3px solid $color-accessibility!important;
 
 }
 
