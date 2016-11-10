@@ -958,3 +958,7 @@ ul.az-result li a {
     }
 }
 
+
+.pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
+    color: #767676;
+}

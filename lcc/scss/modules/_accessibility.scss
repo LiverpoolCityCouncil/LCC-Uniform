@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+
+
+[accessibility.scss] Styling for accessibility specific bits and pieces
+
+
+*/
+
+#skip-to-content{position: absolute; clip: rect(0 0 0 0);color:#fcfeff;}
+
+.form-horizontal .form-group .form-control:focus{
+    outline: 3px solid $color-accessibility!important;
+    outline-offset: 0!important;	
+	
+}
+
+.nav-pills>li.active>a:focus{
+    outline: 3px solid $color-accessibility!important;
+    outline-offset: 0!important;		
+}
+
+.pager a:focus{
+    outline: 3px solid $color-accessibility!important;
+    outline-offset: 0!important;			
+}
+

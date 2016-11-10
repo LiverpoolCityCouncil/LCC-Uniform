@@ -527,7 +527,6 @@ input[type=checkbox]:checked + label{
      
     }
     .help {
-        font-size: 12px;
         color: rgba($color-master, .55);
     }
 }
@@ -868,3 +867,10 @@ input[type=checkbox]:checked + label{
         }
     }
 }
+
+
+.pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
+    color: #767676;
+}
+
+
