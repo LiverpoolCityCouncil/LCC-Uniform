@@ -227,25 +227,11 @@ body {
 	Top Search
 -----------------------------------------------------------------*/
 .main-search form {
-  width: 97%;
-  position: relative;
   margin-top:25px;
 }
-.main-search form:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  font-family: 'FontAwesome';
-  content: '\f002';
-  background: #383838;
-  text-align: center;
-  color: #fff;
-}
 
-.main-search input[type="search"] {
+
+.main-search input {
 	background:#fff;
 	color:#191919;
   -moz-box-sizing: border-box;
@@ -266,11 +252,11 @@ body {
   opacity: 0;
   cursor: pointer;
 }
-.main-search input[type="search"]:focus {
-    outline: 3px solid $color-accessibility;
+.main-search input:focus {
+    outline: 3px solid $color-accessibility!important;
 
 }
-.main-search input[type="search"]:hover {
+.main-search input:hover {
   background:$color-master-lighter;
 }	
 

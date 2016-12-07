@@ -26,6 +26,7 @@
                 opacity: 1;
             }
         }
+        
     }
     .hover-backdrop {
         opacity: .4;
@@ -70,6 +71,8 @@
     }
 }
 
+.hover-push a:focus .hover-caption h2 {outline: 3px solid $color-accessibility!important;}
+
 .hover-zoom{
     cursor: pointer;
     position: relative;
@@ -89,29 +92,5 @@
         .bg-overlay{
             transition: all .3s ease;
         }
-    }
-}
-
-.hover-zoom-simple{
-      cursor: pointer;
-    position: relative;
-    [data-pages-bg-image] {
-        background-position: center center;
-        transition: background-size .3s ease;
-        -webkit-transition: background-size .3s ease;
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-    
-    [data-pages-bg-image]:hover {
-        background-size: 110%;
-    }
-    
-    [data-pages-bg-image] .bg-overlay {
-        transition: all .3s ease;
-    }
-    
-    [data-pages-bg-image]:hover .bg-overlay {
-        opacity: .6 !important;
     }
 }

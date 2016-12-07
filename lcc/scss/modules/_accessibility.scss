@@ -24,3 +24,12 @@
     outline-offset: 0!important;			
 }
 
+.col-md-4 a:focus{
+    outline: 3px solid $color-accessibility!important;
+    outline-offset: 0!important;			
+}
+
+a:focus img {
+    outline: 3px solid $color-accessibility!important;
+    outline-offset: 0!important;					
+}

@@ -519,7 +519,7 @@ input[type=checkbox]:checked + label{
 .form-group {
     margin-bottom: 10px;
     label:not(.error){
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
     }
     label .help{
@@ -775,7 +775,7 @@ input[type=checkbox]:checked + label{
     @include form-control-validation($color-danger, $color-danger, $color-danger);
 }
 .error {
-    font-size: 12px;
+    font-size: 16px;
     color: $color-danger;
     display: block;
 }
